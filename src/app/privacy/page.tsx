@@ -1,9 +1,11 @@
 import React from 'react';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: "Privacy Policy | Ella's Kitchen Abuja",
-  description: "Privacy policy regarding customer information and guest food orders at Ella's Kitchen.",
-};
+export const metadata = buildMetadata({
+  title: 'Privacy Policy',
+  description: "Privacy policy explaining how Ella's Kitchen collects, uses, and protects customer information for guest food orders and catering enquiries.",
+  path: '/privacy',
+});
 
 export default function PrivacyPage() {
   return (

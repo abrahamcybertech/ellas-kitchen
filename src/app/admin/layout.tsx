@@ -1,13 +1,13 @@
 import React from 'react';
 import AdminLayoutClient from './AdminLayoutClient';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: "Administration Portal | Ella's Kitchen Management",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+export const metadata = buildMetadata({
+  title: 'Admin Dashboard',
+  description: "Ella's Kitchen private administration dashboard.",
+  path: '/admin',
+  noIndex: true,
+});
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return <AdminLayoutClient>{children}</AdminLayoutClient>;

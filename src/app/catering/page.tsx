@@ -1,11 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import { CheckCircle2, MessageCircle, Phone, Calendar, Users, Sparkles, ChefHat } from 'lucide-react';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: "Catering and Special Events | Ella's Kitchen Abuja",
-  description: "Executive Nigerian catering, party jollof trays, finger foods small chops platters, and custom birthday cakes in Abuja.",
-};
+export const metadata = buildMetadata({
+  title: 'Catering and Special Events',
+  description:
+    'Executive Nigerian catering in Abuja, party jollof trays, small chops platters, and custom birthday cakes for corporate events, weddings, and celebrations.',
+  path: '/catering',
+  keywords: ['catering Abuja', 'party jollof trays Abuja', 'small chops platter Abuja', 'event catering Nigeria', 'birthday cakes Abuja'],
+});
 
 export default function CateringPage() {
   const packages = [

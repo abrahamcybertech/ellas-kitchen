@@ -1,9 +1,11 @@
 import React from 'react';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: "Terms and Conditions | Ella's Kitchen Abuja",
-  description: "Terms and conditions governing food ordering and catering services at Ella's Kitchen.",
-};
+export const metadata = buildMetadata({
+  title: 'Terms and Conditions',
+  description: "Terms and conditions governing food ordering, delivery, pickup, and catering services at Ella's Kitchen Abuja.",
+  path: '/terms',
+});
 
 export default function TermsPage() {
   return (

@@ -1,13 +1,16 @@
 import React from 'react';
 import { getOrderByReferenceAndToken, getOrderByReferenceAndPhone } from '@/lib/db';
 import OrderTrackingClient from './OrderTrackingClient';
+import { buildMetadata } from '@/lib/seo';
 
 export const revalidate = 0;
 
-export const metadata = {
-  title: "Order Tracking | Ella's Kitchen Food Platform",
-  description: "Track your food order preparation and delivery status in real time.",
-};
+export const metadata = buildMetadata({
+  title: 'Order Tracking',
+  description: "Track your Ella's Kitchen food order preparation and delivery status in real time.",
+  path: '/track',
+  noIndex: true,
+});
 
 export default function OrderTrackPage({
   params,

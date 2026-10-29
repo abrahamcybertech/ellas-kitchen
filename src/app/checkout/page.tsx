@@ -1,13 +1,16 @@
 import React from 'react';
 import { getSettings } from '@/lib/db';
 import CheckoutClient from './CheckoutClient';
+import { buildMetadata } from '@/lib/seo';
 
 export const revalidate = 0;
 
-export const metadata = {
-  title: "Guest Checkout | Ella's Kitchen Food Ordering",
-  description: "Complete your delicious Nigerian food order quickly without account creation.",
-};
+export const metadata = buildMetadata({
+  title: 'Guest Checkout',
+  description: 'Complete your Nigerian food order quickly and securely without creating an account.',
+  path: '/checkout',
+  noIndex: true,
+});
 
 export default function CheckoutPage() {
   const settings = getSettings();

@@ -1,9 +1,11 @@
 import React from 'react';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: "Refund and Cancellation Policy | Ella's Kitchen Abuja",
-  description: "Official refund and cancellation policy for prepared meals, celebration cakes, and catering orders.",
-};
+export const metadata = buildMetadata({
+  title: 'Refund and Cancellation Policy',
+  description: "Official refund and cancellation policy for prepared meals, celebration cakes, and catering orders from Ella's Kitchen Abuja.",
+  path: '/refund-policy',
+});
 
 export default function RefundPolicyPage() {
   return (

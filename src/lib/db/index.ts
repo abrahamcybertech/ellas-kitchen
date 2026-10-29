@@ -19,7 +19,19 @@ import {
   Role,
 } from '@/lib/types';
 
-const DB_PATH = process.env.SQLITE_DB_PATH || path.join(process.cwd(), 'data', 'ellas_kitchen.db');
+function resolveDbPath(): string {
+  const configuredPath = process.env.SQLITE_DB_PATH?.trim();
+
+  // Vercel's deployment filesystem is read-only. SQLite must live in /tmp.
+  if (process.env.VERCEL) {
+    const filename = configuredPath ? path.basename(configuredPath) : 'ellas_kitchen.db';
+    return path.join('/tmp', filename);
+  }
+
+  return configuredPath || path.join(process.cwd(), 'data', 'ellas_kitchen.db');
+}
+
+const DB_PATH = resolveDbPath();
 
 let dbInstance: DatabaseSync | null = null;
 
@@ -27,8 +39,10 @@ export function getDb(): DatabaseSync {
   if (dbInstance) return dbInstance;
 
   const dataDir = path.dirname(DB_PATH);
-  if (!fs.existsSync(dataDir)) {
+  try {
     fs.mkdirSync(dataDir, { recursive: true });
+  } catch (error) {
+    throw new Error(`Unable to create SQLite directory at ${dataDir}: ${error instanceof Error ? error.message : String(error)}`);
   }
 
   const db = new DatabaseSync(DB_PATH);

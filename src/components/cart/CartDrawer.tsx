@@ -4,7 +4,6 @@ import React from 'react';
 import Link from 'next/navigation';
 import { useCart } from '@/context/CartContext';
 import { ShoppingBag, X, Plus, Minus, Trash2, ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 
 export default function CartDrawer() {
   const { items, isCartOpen, setIsCartOpen, updateQuantity, removeItem, subtotal, totalCount } = useCart();

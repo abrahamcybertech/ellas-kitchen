@@ -39,6 +39,15 @@ export default function Footer() {
                 <Facebook className="w-4 h-4" />
               </a>
               <a
+                href="https://x.com/ellaskitchen_ng"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-brand-brown-900 border border-brand-brown-800 flex items-center justify-center text-brand-gold-400 hover:bg-brand-gold-500 hover:text-brand-dark-950 transition"
+                aria-label="X (Twitter)"
+              >
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a
                 href="https://wa.me/2348080058907"
                 target="_blank"
                 rel="noopener noreferrer"

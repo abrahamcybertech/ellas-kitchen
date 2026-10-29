@@ -1,11 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 import { Flame, Heart, ShieldCheck, Award, ArrowRight } from 'lucide-react';
+import { buildMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: "About Us | Ella's Kitchen Nigerian Cuisine",
-  description: "Learn about Ella's Kitchen culinary heritage, traditional recipes, and passion for authentic Nigerian food in Abuja.",
-};
+export const metadata = buildMetadata({
+  title: 'About Us',
+  description:
+    "Learn about Ella's Kitchen culinary heritage, traditional recipes, and passion for authentic Nigerian food prepared fresh in Nyanya, Abuja.",
+  path: '/about',
+  keywords: ["Ella's Kitchen story", 'Nigerian food Abuja', 'Nigerian catering Nyanya', 'authentic Nigerian cuisine'],
+});
 
 export default function AboutPage() {
   return (
