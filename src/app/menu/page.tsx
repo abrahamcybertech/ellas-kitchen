@@ -8,7 +8,7 @@ export const revalidate = 0; // Fresh database query on request
 export const metadata = buildMetadata({
   title: 'Our Menu',
   description:
-    "Browse the complete Ella's Kitchen menu: firewood party jollof rice, assorted meats, traditional soups, puff puff, meat pies, celebration cakes, small chops, and chilled zobo.",
+    "Browse the complete Ella's Kitchen menu: smoky party jollof rice, assorted meats, traditional soups, puff puff, meat pies, celebration cakes, small chops, and chilled zobo.",
   path: '/menu',
   keywords: ['Nigerian menu Abuja', 'jollof rice menu', 'puff puff Abuja', 'Nigerian food delivery menu', 'small chops Abuja'],
 });

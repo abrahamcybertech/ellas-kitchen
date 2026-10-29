@@ -17,7 +17,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-brand-brown-300 leading-relaxed">
-              Ella's Kitchen is a premier Nigerian culinary destination in Abuja, delivering smoky firewood jollof rice, traditional assorted meat delicacies, fresh pastries, celebration cakes, and refreshing chilled beverages.
+              Founded in 2022 in Nyanya, Abuja, Ella's Kitchen is a premier Nigerian culinary destination delivering smoky party jollof rice, traditional assorted meat delicacies, fresh pastries, celebration cakes, and refreshing chilled beverages.
             </p>
             <div className="flex items-center space-x-3 pt-2">
               <a
@@ -110,7 +110,7 @@ export default function Footer() {
               Our Specialties
             </h3>
             <ul className="space-y-2.5 text-sm text-brand-brown-300">
-              <li>Nigerian Firewood Rice Dishes</li>
+              <li>Nigerian Smoky Rice Dishes</li>
               <li>Traditional Assorted Meat Soups</li>
               <li>Fresh Golden Puff Puff and Meat Pies</li>
               <li>Celebration Birthday Cakes</li>
@@ -155,7 +155,7 @@ export default function Footer() {
         {/* Bottom Bar: Legal & Developer Credit */}
         <div className="pt-8 border-t border-brand-brown-900/80 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-brand-brown-400">
           <div className="flex flex-wrap items-center gap-6">
-            <span>&copy; {new Date().getFullYear()} Ella's Kitchen Delicacies. All rights reserved.</span>
+            <span>&copy; 2022–{new Date().getFullYear()} Ella's Kitchen Delicacies. All rights reserved.</span>
             <Link href="/privacy" className="hover:text-brand-gold-400 transition">
               Privacy Policy
             </Link>

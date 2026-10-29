@@ -132,6 +132,7 @@ export function restaurantJsonLd() {
     currenciesAccepted: 'NGN',
     paymentAccepted: 'Cash, Bank Transfer, Paystack',
     servesCuisine: ['Nigerian', 'West African'],
+    foundingDate: '2022',
     hasMenu: absoluteUrl('/menu'),
     menu: absoluteUrl('/menu'),
     acceptsReservations: false,

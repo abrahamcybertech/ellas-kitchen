@@ -6,7 +6,7 @@ import { buildMetadata } from '@/lib/seo';
 export const metadata = buildMetadata({
   title: 'About Us',
   description:
-    "Learn about Ella's Kitchen culinary heritage, traditional recipes, and passion for authentic Nigerian food prepared fresh in Nyanya, Abuja.",
+    "Founded in 2022 in Nyanya, Abuja, Ella's Kitchen shares its culinary heritage, traditional recipes, and passion for authentic Nigerian food.",
   path: '/about',
   keywords: ["Ella's Kitchen story", 'Nigerian food Abuja', 'Nigerian catering Nyanya', 'authentic Nigerian cuisine'],
 });
@@ -23,7 +23,7 @@ export default function AboutPage() {
           Celebrating Authentic Nigerian Hospitality
         </h1>
         <p className="text-base text-brand-brown-300 leading-relaxed">
-          Rooted in the vibrant culinary culture of Nigeria, Ella's Kitchen was born from a simple belief: genuine food brings families, friends, and communities together in joy.
+          Founded in 2022 in Nyanya, Abuja, Ella's Kitchen was born from a simple belief: genuine food brings families, friends, and communities together in joy.
         </p>
       </div>
 
@@ -34,7 +34,7 @@ export default function AboutPage() {
             Our Foundation
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-cream-50 leading-tight">
-            Firewood Smokiness, Handcrafted Spices, and Pure Passion
+            Open-Flame Smokiness, Handcrafted Spices, and Pure Passion
           </h2>
           <p className="text-sm text-brand-brown-300 leading-relaxed">
             In our Nyanya kitchen, we do not believe in shortcuts or mass processed sauces. We slow roast fresh plum tomatoes, red bell peppers, and scotch bonnets to cultivate the deep smoky richness that makes true Abuja party jollof unforgettable.
@@ -72,9 +72,9 @@ export default function AboutPage() {
           <div className="w-12 h-12 rounded-2xl bg-brand-gold-500/10 border border-brand-gold-500/30 flex items-center justify-center text-brand-gold-400">
             <Flame className="w-6 h-6" />
           </div>
-          <h3 className="font-serif text-xl font-bold text-brand-cream-50">Firewood Heritage</h3>
+          <h3 className="font-serif text-xl font-bold text-brand-cream-50">Open-Flame Heritage</h3>
           <p className="text-xs text-brand-brown-300 leading-relaxed">
-            We honor the legendary Nigerian firewood tradition, ensuring our rice dishes and peppered meats carry deep authentic savoriness.
+            We honor the legendary Nigerian open-flame cooking tradition, ensuring our rice dishes and peppered meats carry deep authentic savoriness.
           </p>
         </div>
 

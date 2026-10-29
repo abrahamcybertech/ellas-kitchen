@@ -28,7 +28,7 @@ export default function HomePage() {
       name: 'Chioma Adebayo',
       role: 'Nyanya Resident',
       comment:
-        'The smoky aroma of Ella party jollof rice is unmatched anywhere in Abuja. It tastes exactly like traditional firewood wedding jollof. The chicken was tender and spiced to perfection.',
+        'The smoky aroma of Ella party jollof rice is unmatched anywhere in Abuja. It tastes exactly like traditional smoky wedding jollof. The chicken was tender and spiced to perfection.',
       dish: 'Party Jollof Rice with Crispy Chicken',
     },
     {
@@ -68,7 +68,7 @@ export default function HomePage() {
             <div className="lg:col-span-7 space-y-6 text-left">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold-500/10 border border-brand-gold-500/30 text-brand-gold-400 text-xs font-semibold uppercase tracking-widest">
                 <Flame className="w-3.5 h-3.5 text-brand-gold-500 fill-current" />
-                <span>Authentic Firewood Taste in Abuja</span>
+                <span>Authentic Smoky Taste in Abuja</span>
               </div>
 
               <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-extrabold text-brand-cream-50 leading-[1.1] tracking-tight">
@@ -76,7 +76,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-base sm:text-lg text-brand-cream-200/90 max-w-2xl font-normal leading-relaxed">
-                Welcome to Ella's Kitchen. Savor rich firewood party jollof rice, assorted meats, warm golden puff puff, handcrafted celebration cakes, and refreshing zobo. Freshly prepared daily for prompt delivery across Abuja.
+                Welcome to Ella's Kitchen. Savor rich smoky party jollof rice, assorted meats, warm golden puff puff, handcrafted celebration cakes, and refreshing zobo. Freshly prepared daily for prompt delivery across Abuja.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
@@ -246,7 +246,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-serif text-xl font-bold text-brand-cream-50">Authentic Recipes</h3>
               <p className="text-xs text-brand-brown-300 leading-relaxed">
-                Prepared with slow simmered plum tomatoes, native seasoning, scotch bonnet peppers, and traditional firewood techniques.
+                Prepared with slow simmered plum tomatoes, native seasoning, scotch bonnet peppers, and traditional open-flame techniques.
               </p>
             </div>
 

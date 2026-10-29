@@ -17,9 +17,9 @@ export default function CateringPage() {
       title: 'Party Rice Buffet Tray',
       serves: 'Serves 10 to 12 Guests',
       price: '₦42,000',
-      description: 'Generous aluminum catering buffet tray loaded with authentic firewood party jollof rice, plantain, and 12 pieces of grilled chicken.',
+      description: 'Generous aluminum catering buffet tray loaded with authentic smoky party jollof rice, plantain, and 12 pieces of grilled chicken.',
       features: [
-        'Smoky firewood jollof rice or fried rice',
+        'Smoky party jollof rice or fried rice',
         '12 cuts of crispy golden chicken',
         'Fried sweet dodo plantain',
         'Special spicy pepper sauce',
